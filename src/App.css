@@ -1,0 +1,409 @@
+/*color for the navbar*/
+.header-color {
+  background: #073ff7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #88c0e6, #51a4e7, #2b77be);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #88c0e6, #51a4e7, #2b77be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*homepage design*/
+.landing-grid {
+  background: #073ff7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #88c0e6, #51a4e7, #2b77be);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #88c0e6, #51a4e7, #2b77be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav{
+  color:white;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.banner-text h1{
+  font-size: 40px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-text h3{
+  padding-bottom: 3px;
+  font-size: 30px;
+  color:white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-text h5{
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  color:white;
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+.banner-text hr {
+  border-top: 2px solid red;
+  width: 80%;
+  margin: auto;
+}
+
+.social-links {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-bottom: -38px;
+}
+
+.social-links i {
+  color: white;
+  font-size: 30px;
+  padding:13px;
+}
+
+.social-links i:hover{
+  color: #2b77be;
+  font-size: 35px;
+}
+
+/*Social links hover affects for desktop only*/
+/*github*/
+.hiddenText0{
+  display: none;
+}
+
+.fa-github-square:hover + .hiddenText0 {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+/*youtube*/
+.hiddenText1{
+  display: none;
+}
+
+.fa-youtube-square:hover + .hiddenText1 {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+/*linkedin*/
+.hiddenText2{
+  display: none;
+}
+
+.fa-linkedin-square:hover + .hiddenText2 {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+/*instagram*/
+.hiddenText3{
+  display: none;
+}
+
+.fa-instagram:hover + .hiddenText3 {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+/*resume*/
+.hiddenText4{
+  display: none;
+}
+
+.fa-folder-open:hover + .hiddenText4 {
+  display: block;
+  color: white;
+  text-decoration:none;
+  font-size: 15px;
+}
+
+/*LANDING PAGE for desktop design*/
+@media screen and (min-width: 812px){
+  .banner-text{
+    background-color: black;
+    opacity: .8;
+    width: 60%;
+    border-radius: 55px;
+    margin-top: 40px;
+  }
+
+  .banner-text h1{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .banner-text h3{
+    padding-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .banner-text h5{
+    padding-bottom: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+
+  .social-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .social-links i {
+    color: white;
+    font-size: 50px;
+    padding: 5px;
+  }
+
+  .social-links i:hover{
+    color: #2b77be;
+    font-size: 55px;
+  }
+
+  .banner-text hr {
+    border-top: 3px solid red;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+
+/* Resume Page css */
+.resumeBack{
+  background-color: #f2f2f2;
+}
+
+.hTag{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.hTags{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.resumeName{
+  text-align: center;
+  margin-top: -25px;
+  font-size: 37px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.resume-right-col {
+  background: #888888;
+  color: white;
+  padding: 2em;
+}
+
+.developerStory{
+  font-size: 18px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.info{
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.answer{
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.schoolDate{
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.schoolName{
+  font-size: 23px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.schoolInfo{
+  font-size: 18px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.startTime{
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.jobName{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jobDescription{
+  font-size: 18px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+.me{
+  width: 300px;
+  height: 350px;
+  padding-left: 20px;
+  border-radius: 100px;
+}
+
+.languages{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+}
+
+
+/*RESUME for desktop design*/
+@media screen and (min-width: 812px){
+  .me{
+  width: 500px;
+  height: 550px;
+  border-radius: 50px;
+  }
+
+  .languages{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+/*for desktop design*/
+@media screen and (min-width: 1000px){
+  .me{
+    width: 350px;
+    height: 550px;
+    border-radius: 50px;
+    }
+  }
+
+
+/*project page*/
+
+/*mobile device*/
+.projects-grid{
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 400px
+}
+
+
+/*dont change section responsive for desktop to phone*/
+/*PROJECTS for desktop design*/
+@media screen and (min-width: 812px){
+  .projects-grid{
+    width:1200px;
+    height: 100%;
+    flex: 10;
+    flex-direction:row;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+}
+
+/*laptop*/
+@media screen and (min-width: 1800px){
+  .projects-grid{
+    width:100%;
+    height: 100%;
+    flex-direction:row;
+    justify-content: center; 
+    display: flex;
+    margin-top: 20px;
+  }
+}
+/*dont change section responsive for desktop to phone*/
+
+
+/* contact page css */
+
+.container{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  height:100%;
+}
+
+.contact-title{
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  margin: 7px;
+  margin-left: 20px;
+}
+
+input, textarea{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 15px
+}
+
+.button{
+  width:30%;
+  background-color: #45d7fc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 20px
+}
+
+.button:hover{
+  background-color: #4da4ddd0;
+}
+
+/*CONTACT PAGE for desktop design*/
+@media screen and (min-width: 768px){
+  .contact-list{
+    height: 100%;
+  }
+
+  input, textarea{
+    width:98%
+  }
+}
+
