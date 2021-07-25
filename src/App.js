@@ -1,37 +1,42 @@
-import React, { Component } from 'react';
-import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume/Resume";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="demo-big-content">
-    <Layout>
-        <Header style={{color:'white'}} className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Noreldin Saad</Link>} scroll>
-            <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Header>
-        {/* <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Noreldin Saad</Link>}>
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation> */}
-        {/* </Drawer> */}
-        <Content>
-            <div className="page-content" />
-            <Main/>
-        </Content>
-    </Layout>
-</div>
+import ScrollToTop from "./components/ScrollToTop";
 
-    );
-  }
+function App() {
+  const [load, upadateLoad] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      upadateLoad(false);
+    }, 1200);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <Router>
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/project" component={Projects} />
+          {/* <Route path="/about" component={About} /> */}
+          <Route path="/resume" component={Resume} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
