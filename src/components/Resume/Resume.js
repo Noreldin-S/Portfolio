@@ -14,7 +14,7 @@ function Resume() {
             target="_blank"
           >
             <i className="fa fa-folder-open" aria-hidden="true" />
-            <div className="hiddenText4">Resume</div>
+            <div className="hiddenText4">Technical Resume</div>
           </a>
         </Row>
         <Row className="resume">
@@ -58,12 +58,7 @@ function Resume() {
             <Resumecontent
               title="Fullerton College"
               date=""
-              content={["Genereal Education"]}
-            />
-            <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date=""
-              content={["High School Diploma"]}
+              content={["Business Marketing"]}
             />
             <h3 className="resume-title">Skills</h3>
             <Resumecontent
@@ -82,7 +77,7 @@ function Resume() {
             <Resumecontent
               title=""
               content={[
-                "Front End: Ajax, Axios, Bootstrap, HTML5, CSS/CSS3, ES6, ReactJS, Responsive Design, JavaScript, jQuery, JSON",
+                "Front End: Ajax, Axios, Bootstrap, HTML, CSS/CSS3, ES6, ReactJS, Responsive Design, JavaScript, jQuery, JSON",
                 "Back End: Express.js, Handlebars.js, MongoDB, MySQL, Node.js, Passport, Sequelize ORM, WorkBench",
                 "Tools/Other: Git, GitHub,, Heroku, MERN stack, Microsoft Office, MVC, NPM, RESTful, Testing, Error-Handling",
               ]}
