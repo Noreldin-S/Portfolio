@@ -7,15 +7,15 @@ function Resume() {
     <Container fluid className="resume-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <a
+        <Row className="ResoT"style={{ justifyContent: "center", position: "relative"}}>
+          <button className="ButReg"
             href="https://docs.google.com/document/d/e/2PACX-1vQv9fI5OPRZlFbLCs2Lz-BdVHu1UQ4pFg4Yqs2PLHR_L4eGiCUWWUOhYEKKGuNztLGm8Nf-LsM77cpt/pub"
             rel="noopener noreferrer"
             target="_blank"
           >
             <i className="fa fa-folder-open" aria-hidden="true" />
             <div className="hiddenText4">Technical Resume</div>
-          </a>
+          </button>
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
@@ -51,7 +51,7 @@ function Resume() {
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="UCI"
+              title="University of California, Irvine"
               date=""
               content={["Full Stack Certificate"]}
             />
@@ -77,9 +77,9 @@ function Resume() {
             <Resumecontent
               title=""
               content={[
-                "Front End: Ajax, Axios, Bootstrap, HTML, CSS/CSS3, ES6, ReactJS, Responsive Design, JavaScript, jQuery, JSON",
+                "Front End: Ajax, Axios, Bootstrap, HTML, CSS, ES6, ReactJS, Responsive Design, JavaScript, jQuery, JSON",
                 "Back End: Express.js, Handlebars.js, MongoDB, MySQL, Node.js, Passport, Sequelize ORM, WorkBench",
-                "Tools/Other: Git, GitHub,, Heroku, MERN stack, Microsoft Office, MVC, NPM, RESTful, Testing, Error-Handling",
+                "Tools/Other: Git, GitHub,, Heroku, MERN stack,MVC, NPM, RESTful, Testing, Error-Handling",
               ]}
             />
           </Col>

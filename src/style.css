@@ -610,6 +610,16 @@ html {
   padding-bottom: 50px;
 }
 
+.hiddenText4 {
+  color: rgb(255, 255, 255);
+}
+
+.ButReg {
+  background-color: #934cce5e;
+  border: 1px solid #934cce5e;
+  border-radius: 15px 15px;
+}
+
 .resume-left {
   padding-right: 80px !important;
 }
